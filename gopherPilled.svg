@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 36 36"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="gopherPilled.svg"
+   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
+   inkscape:export-filename="/media/fdschonborn/Elements/Imágenes/gopherPilled.png"
+   inkscape:export-xdpi="1365.3334"
+   inkscape:export-ydpi="1365.3334"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="0.73784725"
+     inkscape:cx="-836.89408"
+     inkscape:cy="-153.14823"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6"
+     inkscape:pagecheckerboard="0" />
+  <path
+     fill="#BB1A34"
+     d="M33.207 19.773l-8.868-8.855L11.105 24.54l8.684 8.685.001-.001C21.509 34.939 23.881 36 26.5 36c5.246 0 9.5-4.254 9.5-9.5 0-2.628-1.068-5.007-2.793-6.727z"
+     id="path2"
+     style="fill:#356b72" />
+  <path
+     fill="#FDCB58"
+     d="M15.921 2.513C14.229.957 11.979 0 9.5 0 4.253 0 0 4.253 0 9.5c0 2.479.958 4.73 2.514 6.421l-.014.014 8.605 8.605 13.234-13.622-8.418-8.405z"
+     id="path4"
+     style="fill:#6ad7e5" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-width="0.219223"
+     stroke-linecap="round"
+     d="m 10.363698,9.1439209 c 3.770553,3.0012231 8.72938,-3.102566 4.709311,-5.9357522 -3.604891,-2.54062424 -7.8420452,2.8302249 -4.709311,5.9357522"
+     id="path316" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-width="0.212688"
+     stroke-linecap="round"
+     d="M 3.9504459,15.891255 C 7.4925346,18.272748 11.729161,13.076994 8.7826746,10.14728 5.2536991,6.6385806 -0.18618472,12.773057 3.9504459,15.891255"
+     id="path318" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-width="0.226151"
+     stroke-linecap="round"
+     d="m 14.855612,12.774427 c 0.413507,0.458574 0.976984,0.884939 1.326992,1.452953 0.08061,0.327266 -0.129223,0.556574 -0.248062,0.823825 -0.313625,0.202162 -0.706078,0.227786 -1.045884,0.06881 -0.56959,-0.49666 -0.955754,-1.124952 -1.437097,-1.700696 z"
+     id="path320" />
+  <g
+     id="g326"
+     transform="matrix(0.05626629,-0.05016803,0.05016803,0.05626629,-4.8215964,12.757235)">
+    <ellipse
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       cx="107.324"
+       cy="95.403999"
+       rx="14.829"
+       ry="16.062"
+       id="ellipse322" />
+    <ellipse
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       fill="#ffffff"
+       cx="114.069"
+       cy="99.028999"
+       rx="3.4960001"
+       ry="4.0819998"
+       id="ellipse324" />
+  </g>
+  <g
+     id="g332"
+     transform="matrix(0.05626629,-0.05016803,0.05016803,0.05626629,-4.8215964,12.757235)">
+    <ellipse
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       cx="231.571"
+       cy="91.403999"
+       rx="14.582"
+       ry="16.062"
+       id="ellipse328" />
+    <ellipse
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       fill="#ffffff"
+       cx="238.20399"
+       cy="95.028999"
+       rx="3.438"
+       ry="4.0819998"
+       id="ellipse330" />
+  </g>
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-width="0.226151"
+     stroke-linecap="round"
+     d="m 12.426467,14.850208 c 0.422591,1.206843 2.562662,2.465478 2.390179,0.283508 -0.569582,-0.496667 -0.955753,-1.12495 -1.437097,-1.700695 z"
+     id="path334" />
+  <g
+     id="g340"
+     transform="matrix(0.05626629,-0.05016803,0.05016803,0.05626629,-5.9604866,14.188984)">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       fill="#f6d2a2"
+       stroke="#231f20"
+       stroke-width="3"
+       stroke-linecap="round"
+       d="m 178.431,138.673 c -12.059,1.028 -21.916,15.366 -15.646,26.709 8.303,15.024 26.836,-1.329 38.379,0.203 13.285,0.272 24.17,14.047 34.84,2.49 11.867,-12.854 -5.109,-25.373 -18.377,-30.97 z"
+       id="path336" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 176.913,138.045 c -0.893,-20.891 38.938,-23.503 43.642,-6.016 4.692,17.446 -41.681,21.498 -43.642,6.016 -1.565,-12.363 0,0 0,0 z"
+       id="path338" />
+  </g>
+</svg>
