@@ -14,6 +14,13 @@ import (
 
 const (
 	defaultWidth = 64
+	readmeHeader = `# Discord Emoji
+
+Discord emoji made by me (mostly for the Rust Programming Language Community Server).
+
+## Preview
+
+`
 )
 
 var (
@@ -31,8 +38,9 @@ func main() {
 		suffix = "_" + width
 	}
 
-	exportDir, _ := filepath.Abs(*exportFlag)
+	root, _ := os.Getwd()
 
+	exportDir, _ := filepath.Abs(*exportFlag)
 	if err := os.RemoveAll(exportDir); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v", err)
 		os.Exit(1)
@@ -43,8 +51,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	readmeFile, _ := os.Create(filepath.Join(exportDir, "README.md"))
-	if _, err := io.WriteString(readmeFile, "<!-- markdownlint-disable MD041 MD045 -->\n"); err != nil {
+	readmeFile, _ := os.Create("README.md")
+	if _, err := io.WriteString(readmeFile, readmeHeader); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v", err)
 		os.Exit(1)
 	}
@@ -69,8 +77,8 @@ func main() {
 			return nil
 		}
 
-		relPath, _ := filepath.Rel(exportDir, exportPath)
-		if _, err := io.WriteString(readmeFile, "![](./"+relPath+" \""+emoji+"\")\n"); err != nil {
+		relPath, _ := filepath.Rel(root, exportPath)
+		if _, err := io.WriteString(readmeFile, "!["+emoji+"](./"+relPath+" \""+emoji+"\")\n"); err != nil {
 			fmt.Fprintf(os.Stderr, "Error: %v", err)
 			return nil
 		}
