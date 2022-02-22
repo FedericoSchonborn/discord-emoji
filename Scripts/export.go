@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	defaultWidth = 64
+	defaultSize  = 64
 	readmeHeader = `# Discord Emoji
 
 Discord emoji made by me (mostly for the Rust Programming Language Community Server).
@@ -26,16 +26,16 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 var (
 	sourceFlag = flag.String("s", "./Sources", "Source directory")
 	exportFlag = flag.String("e", "./Export", "Export directory")
-	widthFlag  = flag.Int("w", defaultWidth, "Image width")
+	sizeFlag   = flag.Int("z", defaultSize, "Image size")
 )
 
 func main() {
 	flag.Parse()
 
-	width := strconv.Itoa(*widthFlag)
+	size := strconv.Itoa(*sizeFlag)
 	var suffix string
-	if *widthFlag != defaultWidth {
-		suffix = "_" + width
+	if *sizeFlag != defaultSize {
+		suffix = "_" + size
 	}
 
 	root, _ := os.Getwd()
@@ -68,7 +68,7 @@ func main() {
 		exportName := emoji + suffix + ".png"
 		exportPath := filepath.Join(exportDir, exportName)
 
-		cmd := exec.Command("inkscape", "--export-filename="+exportPath, "--export-width="+width, path)
+		cmd := exec.Command("inkscape", "--export-filename="+exportPath, "--export-width="+size, path)
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
 		cmd.Stdout = os.Stdout
