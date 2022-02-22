@@ -23,15 +23,15 @@
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
    id="defs96">
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
     </defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -70,7 +70,7 @@
    fit-margin-right="0"
    fit-margin-bottom="0"
    inkscape:pagecheckerboard="0" />
-    
+
 <g
    transform="matrix(0.85785312,0,0,0.85785312,598.15373,371.86178)"
    id="g57">
@@ -113,7 +113,7 @@
    ry="28.004025"
    transform="rotate(-3.6435651)" /><text
    xml:space="preserve"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.361px;line-height:1.25;font-family:'Fira Mono';-inkscape-font-specification:'Fira Mono Bold';stroke-width:1.16185"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.361px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';stroke-width:1.16185"
    x="-22.222187"
    y="419.70108"
    id="text4443"
@@ -122,4 +122,4 @@
      id="tspan4441"
      x="-22.222187"
      y="419.70108"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.361px;font-family:'Fira Mono';-inkscape-font-specification:'Fira Mono Bold';fill:#ffffff;stroke-width:1.16185">::&lt;!&gt;()?</tspan></text></svg>
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.361px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#ffffff;stroke-width:1.16185">::&lt;!&gt;()?</tspan></text></svg>
