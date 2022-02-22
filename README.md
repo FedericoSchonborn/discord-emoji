@@ -1,3 +1,3 @@
-# Emoji Stash
+# Discord Emoji
 
-The raw SVG for emojis I made for the Rust community server on Discord.
+Discord emoji made by me (mostly for the Rust Programming Language Community Server).
