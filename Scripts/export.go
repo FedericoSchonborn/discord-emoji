@@ -12,10 +12,14 @@ import (
 	"strings"
 )
 
+const (
+	defaultWidth = 64
+)
+
 var (
 	sourceFlag = flag.String("s", "./Sources", "Source directory")
-	exportFlag = flag.String("d", "./Export", "Destination directory")
-	widthFlag  = flag.Int("w", 32, "Image width")
+	exportFlag = flag.String("e", "./Export", "Export directory")
+	widthFlag  = flag.Int("w", defaultWidth, "Image width")
 )
 
 func main() {
@@ -23,7 +27,7 @@ func main() {
 
 	width := strconv.Itoa(*widthFlag)
 	var suffix string
-	if *widthFlag != 32 {
+	if *widthFlag != defaultWidth {
 		suffix = "_" + width
 	}
 
