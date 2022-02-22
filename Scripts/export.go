@@ -1,34 +1,56 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io"
 	"io/fs"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"strconv"
 	"strings"
 )
 
+var (
+	sourceFlag = flag.String("s", "./Sources", "Source directory")
+	exportFlag = flag.String("d", "./Export", "Destination directory")
+	widthFlag  = flag.Int("w", 32, "Image width")
+)
+
 func main() {
-	exportDir, _ := filepath.Abs("./Export")
+	flag.Parse()
+
+	width := strconv.Itoa(*widthFlag)
+	var suffix string
+	if *widthFlag != 32 {
+		suffix = "_" + width
+	}
+
+	exportDir, _ := filepath.Abs(*exportFlag)
 	if err := os.MkdirAll(exportDir, os.ModePerm); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v", err)
 		os.Exit(1)
 	}
-	readmeFile, _ := os.Create(filepath.Join(exportDir, "README.md"))
 
-	svgDir, _ := filepath.Abs("./Sources")
+	readmeFile, _ := os.Create(filepath.Join(exportDir, "README.md"))
+	if _, err := io.WriteString(readmeFile, "<!-- markdownlint-disable MD041 MD045 -->\n"); err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v", err)
+		os.Exit(1)
+	}
+
+	svgDir, _ := filepath.Abs(*sourceFlag)
 	filepath.WalkDir(svgDir, func(path string, entry fs.DirEntry, err error) error {
-		if filepath.Ext(path) != ".svg" {
+		name := entry.Name()
+		if entry.IsDir() || filepath.Ext(name) != ".svg" {
 			return nil
 		}
 
-		svgName := filepath.Base(path)
-		baseName := strings.TrimSuffix(svgName, ".svg")
-		pngName := baseName + ".png"
-		exportPath := filepath.Join(exportDir, pngName)
-		cmd := exec.Command("inkscape", "--export-filename="+exportPath, "--export-width=32", path)
+		emoji := strings.TrimSuffix(name, ".svg")
+		exportName := emoji + suffix + ".png"
+		exportPath := filepath.Join(exportDir, exportName)
+
+		cmd := exec.Command("inkscape", "--export-filename="+exportPath, "--export-width="+width, path)
 		cmd.Stderr = os.Stderr
 		cmd.Stdin = os.Stdin
 		cmd.Stdout = os.Stdout
@@ -37,7 +59,8 @@ func main() {
 			return nil
 		}
 
-		if _, err := io.WriteString(readmeFile, "!["+baseName+"](./"+pngName+")"); err != nil {
+		relPath, _ := filepath.Rel(exportDir, exportPath)
+		if _, err := io.WriteString(readmeFile, "![](./"+relPath+" \""+emoji+"\")\n"); err != nil {
 			fmt.Fprintf(os.Stderr, "Error: %v", err)
 			return nil
 		}
