@@ -28,6 +28,12 @@ func main() {
 	}
 
 	exportDir, _ := filepath.Abs(*exportFlag)
+
+	if err := os.RemoveAll(exportDir); err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %v", err)
+		os.Exit(1)
+	}
+
 	if err := os.MkdirAll(exportDir, os.ModePerm); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v", err)
 		os.Exit(1)
