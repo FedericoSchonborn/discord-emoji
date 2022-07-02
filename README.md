@@ -7,6 +7,7 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 ![burris](./Preview/burris.png "burris")
 ![daFerris](./Preview/daFerris.png "daFerris")
 ![fepher](./Preview/fepher.png "fepher")
+![ferrisAcquire](./Preview/ferrisAcquire.png "ferrisAcquire")
 ![ferrisAngry](./Preview/ferrisAngry.png "ferrisAngry")
 ![ferrisBarf](./Preview/ferrisBarf.png "ferrisBarf")
 ![ferrisBased](./Preview/ferrisBased.png "ferrisBased")
