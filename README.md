@@ -15,6 +15,7 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 ![ferrisBorgar](./Preview/ferrisBorgar.png "ferrisBorgar")
 ![ferrisChefKiss](./Preview/ferrisChefKiss.png "ferrisChefKiss")
 ![ferrisChoccyMilk](./Preview/ferrisChoccyMilk.png "ferrisChoccyMilk")
+![ferrisClown](./Preview/ferrisClown.png "ferrisClown")
 ![ferrisClueless](./Preview/ferrisClueless.png "ferrisClueless")
 ![ferrisCoin](./Preview/ferrisCoin.png "ferrisCoin")
 ![ferrisCursing](./Preview/ferrisCursing.png "ferrisCursing")
