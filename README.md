@@ -31,6 +31,7 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 ![ferrisNerd](./Preview/ferrisNerd.png "ferrisNerd")
 ![ferrisOld](./Preview/ferrisOld.png "ferrisOld")
 ![ferrisPensive](./Preview/ferrisPensive.png "ferrisPensive")
+![ferrisPet](./Preview/ferrisPet.png "ferrisPet")
 ![ferrisPilled](./Preview/ferrisPilled.png "ferrisPilled")
 ![ferrisPlead](./Preview/ferrisPlead.png "ferrisPlead")
 ![ferrisRealization](./Preview/ferrisRealization.png "ferrisRealization")
