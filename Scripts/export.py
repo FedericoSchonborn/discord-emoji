@@ -1,6 +1,6 @@
-from dataclasses import dataclass
-from pathlib import Path
-from os import mkdir, walk
+#!/usr/bin/env python3
+
+from os import walk
 import subprocess
 
 
@@ -13,11 +13,11 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 """
 
 
-previews: list[dict[str, str]] = []
-for _, _, files in walk("Sources"):
-    files.sort()
+generated: list[dict[str, str]] = []
+for _, _, sources in walk("Sources"):
+    sources.sort()
 
-    for file in files:
+    for file in sources:
         emoji_name = file.removesuffix(".svg")
         export_name = emoji_name + ".png"
 
@@ -26,11 +26,11 @@ for _, _, files in walk("Sources"):
         subprocess.run(
             ["inkscape", f"--export-filename=./Preview/{export_name}", "--export-width=64", f"./Sources/{file}"])
 
-        previews.append(
-            {"name": emoji_name, "path": f"./Preview/{export_name}"})
+        generated.append(
+            {"name": emoji_name, "preview": f"./Preview/{export_name}", "export": f"./Export/{export_name}"})
 
 with open("README.md", "w") as readme:
     readme.write(README_HEADER)
 
-    for preview in previews:
-        readme.write("![{name}]({path} \"{name}\")\n".format_map(preview))
+    for file in generated:
+        readme.write("[![{name}]({preview})]({export})\n".format_map(file))
