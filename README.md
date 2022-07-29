@@ -20,6 +20,7 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 [![ferrisClown](./Preview/ferrisClown.png)](./Export/ferrisClown.png)
 [![ferrisClueless](./Preview/ferrisClueless.png)](./Export/ferrisClueless.png)
 [![ferrisCoin](./Preview/ferrisCoin.png)](./Export/ferrisCoin.png)
+[![ferrisCovfefe](./Preview/ferrisCovfefe.png)](./Export/ferrisCovfefe.png)
 [![ferrisCursing](./Preview/ferrisCursing.png)](./Export/ferrisCursing.png)
 [![ferrisDisapproval](./Preview/ferrisDisapproval.png)](./Export/ferrisDisapproval.png)
 [![ferrisForgor](./Preview/ferrisForgor.png)](./Export/ferrisForgor.png)
