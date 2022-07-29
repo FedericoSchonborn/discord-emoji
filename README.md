@@ -37,6 +37,7 @@ Discord emoji made by me (mostly for the Rust Programming Language Community Ser
 [![ferrisPlead](./Preview/ferrisPlead.png)](./Export/ferrisPlead.png)
 [![ferrisRealization](./Preview/ferrisRealization.png)](./Export/ferrisRealization.png)
 [![ferrisRelieved](./Preview/ferrisRelieved.png)](./Export/ferrisRelieved.png)
+[![ferrisRollingEyes](./Preview/ferrisRollingEyes.png)](./Export/ferrisRollingEyes.png)
 [![ferrisSans](./Preview/ferrisSans.png)](./Export/ferrisSans.png)
 [![ferrisSmug](./Preview/ferrisSmug.png)](./Export/ferrisSmug.png)
 [![ferrisTriumph](./Preview/ferrisTriumph.png)](./Export/ferrisTriumph.png)
